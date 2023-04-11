@@ -61,7 +61,7 @@ def heartDiseasesPredictionResult(request):
     rf_predict=rf.predict([new_data])
 
     #Final Result
-    if (getFinalPrediction(nb_predict[0],lr_predict[0],rf_predict)):
+    if (getFinalPrediction(nb_predict[0],lr_predict[0],rf_predict[0])):
         hresult='The Person does not have a Heart Disease'
     else:
         hresult='The Person has Heart Disease'
