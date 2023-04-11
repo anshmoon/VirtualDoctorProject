@@ -1,0 +1,72 @@
+
+{% load static %}
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Virtual Doctor</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{% static 'assets/css/main.css' %}" />
+		<noscript><link rel="stylesheet" href="{% static 'assets/css/noscript.css' %}" /></noscript>
+	</head>
+	<style>
+		.tooltip {
+		  position: relative;
+		  display: inline-block;
+		  border-bottom: 1px dotted black;
+		  height: fit-content;
+		  width: auto;
+		}
+		
+		.tooltip .tooltiptext {
+		  visibility: hidden;
+		  width: auto;
+		  min-width: 120px;
+		  background-color: black;
+		  color: #fff;
+		  text-align: center;
+		  border-radius: 6px;
+		  padding: 5px 0;
+		
+		  /* Position the tooltip */
+		  position: absolute;
+		  z-index: 1;
+		}
+		
+		.tooltip:hover .tooltiptext {
+		  visibility: visible;
+		}
+		</style>
+	<body class="is-preload">
+
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<nav>
+						<ul>
+							<li><a href="/app/trial">Welcome</a></li>
+							<li><a href="#two">What we do</a></li>
+							<li><a href="#one">Our Models</a></li>
+							
+						</ul>
+					</nav>
+				</div>
+			</section>
+
+		
+					{% block body%}
+					{% endblock %}	
+					</body>
+					<script src="{% static 'assets/js/jquery.min.js'%}"></script>
+					<script src="{% static 'assets/js/jquery.scrollex.min.js'%}"></script>
+					<script src="{% static 'assets/js/jquery.scrolly.min.js'%}"></script>
+					<script src="{% static 'assets/js/browser.min.js'%}"></script>
+					<script src="{% static 'assets/js/breakpoints.min.js'%}"></script>
+					<script src="{% static 'assets/js/util.js'%}"></script>
+					<script src="{% static 'assets/js/main.js'%}"></script>
+					</html>
